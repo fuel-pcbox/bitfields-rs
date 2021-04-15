@@ -25,8 +25,10 @@ fn single_bit() {
     assert_eq!(test.get_bit(), 0);
     test.set_bit(1u64);
     assert_eq!(test.get_bit(), 1);
+    assert_eq!(test.value,1 << 5);
     test.set_bit(0u64);
     assert_eq!(test.get_bit(), 0);
+    assert_eq!(test.value,0);
 }
 
 #[test]
@@ -42,10 +44,13 @@ fn multiple_bit() {
     assert_eq!(test.get_bits(), 0);
     test.set_bits(1u64);
     assert_eq!(test.get_bits(), 1);
+    assert_eq!(test.value,1 << 5);
     test.set_bits(0u64);
     assert_eq!(test.get_bits(), 0);
     test.set_bits(2u64);
     assert_eq!(test.get_bits(), 2);
+    assert_eq!(test.value,2 << 5);
     test.set_bits(3u64);
     assert_eq!(test.get_bits(), 3);
+    assert_eq!(test.value,3 << 5);
 }
