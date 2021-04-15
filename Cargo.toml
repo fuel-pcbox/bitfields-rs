@@ -5,6 +5,7 @@ authors = ["qeeg <mszoopers@protonmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/qeeg/bitfields-rs/"
+documentation = "A Rust macro to generate bitfields"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
